@@ -6,7 +6,7 @@ import javax.inject.Inject
 
 class MainRepository @Inject constructor(private val homeService: HomeService) : BaseRepository() {
 
-    fun getMovieList(page: Int) = homeService.getPopularMovies(page = 1)
+    fun getMovieList(page: Int) = homeService.getPopularMovies(page = page)
 
 }
 

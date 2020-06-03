@@ -12,10 +12,10 @@ class MainViewModel @Inject constructor(private val mainRepository: MainReposito
     BaseViewModel() {
 
     var movieList: LiveData<PagedList<Movie>>
-    private var factory: MovieListDataSourceFactory
+    private var factory: MovieListDataSourceFactory =
+        MovieListDataSourceFactory(mainRepository, internalState)
 
     init {
-        factory = MovieListDataSourceFactory(mainRepository, internalState)
         val config = PagedList.Config.Builder()
             .setPageSize(10)
             .setEnablePlaceholders(true)
