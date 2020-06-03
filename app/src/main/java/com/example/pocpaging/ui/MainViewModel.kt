@@ -8,7 +8,7 @@ import com.example.pocpaging.data.model.Movie
 import com.example.pocpaging.ui.paging.MovieListDataSourceFactory
 import javax.inject.Inject
 
-class MainViewModel @Inject constructor(private val mainRepository: MainRepository) :
+class MainViewModel @Inject constructor(mainRepository: MainRepository) :
     BaseViewModel() {
 
     var movieList: LiveData<PagedList<Movie>>

@@ -70,4 +70,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    companion object {
+        const val name = "SAfwat"
+    }
 }

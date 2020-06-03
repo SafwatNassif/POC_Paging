@@ -6,7 +6,6 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
-import com.example.movieappstarter.di.helper.Injectable
 import com.example.pocpaging.POCApplication
 import com.example.pocpaging.di.componet.AppComponent
 import com.example.pocpaging.di.componet.DaggerAppComponent

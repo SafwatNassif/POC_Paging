@@ -58,7 +58,7 @@ abstract class BasePageDataSource<T>(private val state: MutableLiveData<ViewStat
 
 
     fun onCleared() {
-        if (compositeDisposable.isDisposed.not()) compositeDisposable.clear()
+        if (compositeDisposable.isDisposed.not()) compositeDisposable.dispose()
     }
 
 
